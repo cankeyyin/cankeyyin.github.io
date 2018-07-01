@@ -45,11 +45,6 @@
 				<!--通过target绑定iframe的name值，在iframe中打开链接-->
 				<ul>
 					
-					<!-- <li id="gotoCilimao">
-						<img src="http://cilimao-static.b0.upaiyun.com/other/1cc079e0-8ca8-11e7-8b53-01d4f1f3d297.ico" style="width:15px;height:15px" />
-						<a style="cursor:pointer;">磁力猫</a><br/>
-					</li>
-					<br/> -->
 					<li id="gotoIqiyi">
 						<img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=63888363,1578153921&fm=58" />
 						<a style="cursor:pointer;">爱奇艺</a><br/>
@@ -119,7 +114,11 @@
 						<a style="cursor:pointer;">MOOC学院</a><br/>
 					</li>
 					<br/>
-					
+					<li id="gotoCilimao">
+						<img src="http://cilimao-static.b0.upaiyun.com/other/1cc079e0-8ca8-11e7-8b53-01d4f1f3d297.ico" style="width:15px;height:15px" />
+						<a style="cursor:pointer;">磁力猫</a><br/>
+					</li>
+					<br/>
 					
 				</ul>
 				
@@ -131,9 +130,10 @@
 		</div>
 		
 		<script type="text/javascript">
-			// $("#gotoCilimao").click(function(){
-			// 	$("#web").attr("src","https://www.cilimao.me/")
-			// })
+			$("#gotoCilimao").click(function(){
+				//$("#web").attr("src","https://www.cilimao.me/")
+				window.open("https://www.cilimao.me/"); 
+			})
 			$("#gotoIqiyi").click(function(){
 				$("#web").attr("src","https://www.iqiyi.com/")
 			})
